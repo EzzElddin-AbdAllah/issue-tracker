@@ -14,20 +14,35 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
 		label: string;
 		value: number;
 		status: Status;
+		color: string; // Change the color type to string
 	}[] = [
-		{ label: "Open Issues", value: open, status: "OPEN" },
+		{
+			label: "Open Issues",
+			value: open,
+			status: "OPEN",
+			color: "var(--red-a4)",
+		},
 		{
 			label: "In-progress Issues",
 			value: inProgress,
 			status: "IN_PROGRESS",
+			color: "var(--orange-a4)",
 		},
-		{ label: "Closed Issues", value: closed, status: "CLOSED" },
+		{
+			label: "Closed Issues",
+			value: closed,
+			status: "CLOSED",
+			color: "var(--green-a4)",
+		},
 	];
 
 	return (
-		<Flex gap="4">
+		<Flex justify="between" gap="1">
 			{containers.map((container) => (
-				<Card key={container.label}>
+				<Card
+					key={container.label}
+					style={{ backgroundColor: container.color }} // Apply background color from the color property
+				>
 					<Flex direction="column" gap="1">
 						<Link
 							className="text-sm font-medium"
