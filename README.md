@@ -27,13 +27,6 @@ The app should now be running at [http://localhost:3000](http://localhost:3000).
 ![Issue Tracker Dashboard](public/dashboard.png)
 ![Issue Tracker Issues Page](public/issues.png)
 
-## Scripts
-
-- `npm run dev`: Start the development server.
-- `npm run build`: Build the project for production.
-- `npm run start`: Start the production server.
-- `npm run lint`: Run linting on the project.
-
 ## Technologies Used
 
 - Next.js
