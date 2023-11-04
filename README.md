@@ -37,6 +37,7 @@ The app should now be running at [http://localhost:3000](http://localhost:3000).
 - Prisma
 - Axios
 - Tailwind CSS
+- Radxi UI
 - Zod
 
 ## Deployment
