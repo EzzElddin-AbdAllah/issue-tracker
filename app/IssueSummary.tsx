@@ -14,7 +14,7 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
 		label: string;
 		value: number;
 		status: Status;
-		color: string; // Change the color type to string
+		color: string;
 	}[] = [
 		{
 			label: "Open Issues",
@@ -23,7 +23,7 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
 			color: "var(--red-a4)",
 		},
 		{
-			label: "In-progress Issues",
+			label: "In-Progress Issues",
 			value: inProgress,
 			status: "IN_PROGRESS",
 			color: "var(--orange-a4)",
@@ -41,7 +41,7 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
 			{containers.map((container) => (
 				<Card
 					key={container.label}
-					style={{ backgroundColor: container.color }} // Apply background color from the color property
+					style={{ backgroundColor: container.color }}
 				>
 					<Flex direction="column" gap="1">
 						<Link
