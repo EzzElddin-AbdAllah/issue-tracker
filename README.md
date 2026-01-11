@@ -42,4 +42,4 @@ The app should now be running at [http://localhost:3000](http://localhost:3000).
 
 ## Deployment
 
-Issue Tracker is deployed on [issue-tracker-ezzelddin-abdallahs-projects.vercel.app](https://https://issue-tracker-ezzelddin-abdallahs-projects.vercel.app). We used Vercel for seamless deployment.
+Issue Tracker is deployed on [issue-tracker-ezz.vercel.app](https://issue-tracker-ezz.vercel.app). We used Vercel for seamless deployment.
